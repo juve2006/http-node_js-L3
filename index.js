@@ -1,28 +1,29 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs')
-const url = require('url');
 
-
-const PORT = 8080;
-
+const port = 8080;
 
 const app = express();
+
 app.get('/', function (request, response) {
     response.send('Hello World! /get');
     console.log (request.method);
     console.log (request.url);
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
+const urlencodedParser = bodyParser.urlencoded({ extended: true })
 
-app.post('/', (request, response) => {
-    console.log('Got body:', request.body);
-    response.sendStatus(200);
-    console.log (request.method);
-    console.log (request.url);
+
+app.post('/', urlencodedParser, function (request, response) {
+    if (!request.body) return response.sendStatus(400)
+    console.log(request.body)
+    response.send(`${request.body}`)
 });
 
+
 app.listen(8080, ()=>{
-    console.log ('Server start on port '+`${PORT}`);
+    console.log ('Server start on port '+`${port}`);
 })
+
+
