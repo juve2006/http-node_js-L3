@@ -1,0 +1,211 @@
+1)
+https://trollauthapp.herokuapp.com/users/new
+
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 139
+Etag: W/"8b-X4uNVeymkwoHDO36j/ENjdd083A"
+Date: Fri, 13 May 2022 07:44:56 GMT
+Via: 1.1 vegur
+
+{
+"email": "troll1@gmail.com",
+"password": "$2b$10$TAqVbscDyEuDwaA5KcgtXOZ5/Ft3MPN1B81Os6n4LllPuSqb3M2a2",
+"username": "troll1",
+"role": 1,
+"id": 35
+}
+Response file saved.
+> 2022-05-13T103722.201.json
+
+Response code: 201 (Created); Time: 328ms; Content length: 139 bytes
+
+2)
+https://trollauthapp.herokuapp.com/auth/login
+
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 184
+Etag: W/"b8-DmwGcVgDjVh5VbRVk30rIFRzOwI"
+Date: Fri, 13 May 2022 07:46:13 GMT
+Via: 1.1 vegur
+
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyb2xsMSIsInN1YiI6OCwiaWF0IjoxNjUyNDI3OTczLCJleHAiOjE2NTI0MjgyNzN9.fOJrZFhhvYurcRzNdPExE9jkBNM1AiykCIakAP9OXkI"
+}
+Response file saved.
+> 2022-05-13T103839.201.json
+
+Response code: 201 (Created); Time: 375ms; Content length: 184 bytes
+
+3)
+
+https://trollauthapp.herokuapp.com/users
+
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 3067
+Etag: W/"bfb-EtI0yVwUtOfWl9SC0Qqe5D6xG2g"
+Date: Fri, 13 May 2022 07:47:17 GMT
+Via: 1.1 vegur
+
+[
+  {
+    "id": 1,
+    "username": "troll",
+    "password": "$2b$10$GP3Jpe2XeWKalZDJG2ONjunVSkYvfel8J4ub2pweRrcJ29F.UhMZe"
+  },
+  {
+    "id": 8,
+    "username": "troll1",
+    "password": "$2b$10$hRlrahcZvv3X08ULK9js8uZh.4M7f2kMLAFACh1aefn4/TxKSQRy2"
+  },
+  {
+    "id": 9,
+    "username": "Test user",
+    "password": "$2b$10$K0uKrXJ7OFhyl99TWWM3guEAC1vZR8Fy/AdkY.7hvy6/ILOHWrEOu"
+  },
+  {
+    "id": 10,
+    "username": "Vova",
+    "password": "$2b$10$uP.lDhjKi/E.827xUo7HkeiWCvnYnZyKGSlhSIDQRSGMYrABuTKqG"
+  },
+  {
+    "id": 11,
+    "username": "",
+    "password": "$2b$10$YlxF/xYMnAK0PlotSQzlZuPMEoovHrWUIpFz9Qoee4N9GzhxkXCOu"
+  },
+  {
+    "id": 12,
+    "username": "Test User",
+    "password": "$2b$10$k0usa8nMgNZcTtAFcXjYCu60.yCdko0c6Y39KgrcQJ0FpByBQnSXW"
+  },
+  {
+    "id": 13,
+    "username": "Andriiko",
+    "password": "$2b$10$b1aNN3aeuuLlaB0XhB.6TO2a1pp5JTdlPj/pijAmJZTNFNt96HtDO"
+  },
+  {
+    "id": 14,
+    "username": "tetyana",
+    "password": "$2b$10$OdeywmnUTL.UVgWDvTDmSOCWkrcBx.IMa8veEuHlQySw01fgPRdi."
+  },
+  {
+    "id": 15,
+    "username": "firtht user test",
+    "password": "$2b$10$GRebQh4uJqMre2Ldc13PxObgJrHpfXQty09yLmKHfqsEV.Y1y1/7O"
+  },
+  {
+    "id": 16,
+    "username": "second user test",
+    "password": "$2b$10$SDb1ic0H0b/rrBpLDB9MQePQeLRREjBarNvIvtD5nJy7Rrsb5Ez1C"
+  },
+  {
+    "id": 17,
+    "username": "second user test",
+    "password": "$2b$10$Wbe30FNmYltLkblNoTTAn.MRPWnKqr1XWgk9a5Gd6Z4kHUFLndOUi"
+  },
+  {
+    "id": 18,
+    "username": "second user test",
+    "password": "$2b$10$5l5gX.zswrh/WbrlhH2kluNBlut9wk0y0fqi4sbeJx1QGWn/Q/V66"
+  },
+  {
+    "id": 19,
+    "username": "newfirstUser",
+    "password": "$2b$10$oB0OR0tA8vi1KzPz8AWjaeehNPmJhiBLBAmOc/XxixlguOzIcKevi"
+  },
+  {
+    "id": 20,
+    "username": "Joker",
+    "password": "$2b$10$JhiHgoy9Mb3U.hzvfFeGcO2N7bJzyV0Eb9TnCRiukxi9hP3Lrz7.W"
+  },
+  {
+    "id": 21,
+    "username": "Joker",
+    "password": "$2b$10$65btFaDuH1ewAwcYixzwd.uTr0SBRWjOBHW8q2muhkMlPQrxASaSe"
+  },
+  {
+    "id": 22,
+    "username": "Joker",
+    "password": "$2b$10$4pZuO4WI0/oORhgTcgUW2OKYGRJ/nlAK1ZW76zy5mKQExzkXxJ71C"
+  },
+  {
+    "id": 23,
+    "username": "Joker",
+    "password": "$2b$10$BKSGq4XlrFfTqYD/WTcL9eGuuYz27iR3lcRX0JF3cAZj8EDTxtTGW"
+  },
+  {
+    "id": 24,
+    "username": "Last Attempt",
+    "password": "$2b$10$vs8radjmdsORl3jXqUtVruIZAYORd7KdjOt/1V3HCngTorpaezRde"
+  },
+  {
+    "id": 25,
+    "username": "Batman",
+    "password": "$2b$10$6koeHdLnHi9Ck4rHgBZRTO1WRWwmN.1qHKaMKM1hbbpnQBVWVrBBu"
+  },
+  {
+    "id": 26,
+    "username": "witch",
+    "password": "$2b$10$5rTS51LeFVsyj4pkLeG7uOSR.dnfFXlWuMMMtcnGcsRfJaaVJqecW"
+  },
+  {
+    "id": 27,
+    "username": "Oleh5555",
+    "password": "$2b$10$.BKOl302e1eCljF58oSZXOkWIYZ6yA2em1m4EnifabcbWC5hn8FEa"
+  },
+  {
+    "id": 28,
+    "username": "troll123",
+    "password": "$2b$10$XGsvJa1aPdzm/dzBiLKkzeH/CQNA6qWbDFljZ7o8NZ0uLuuBSX78C"
+  },
+  {
+    "id": 29,
+    "username": "troll123",
+    "password": "$2b$10$UCCiaitHg2zG/M7nEc5mneP0kyvlFjSJU0fPQjN5A3PKW8GnwYsmi"
+  },
+  {
+    "id": 30,
+    "username": "troll1",
+    "password": "$2b$10$ZyQtZfdZp7eFkwH/3ieAauREmyr0YXAbMrx/5Q2.TKdl9lzH1DaEy"
+  },
+  {
+    "id": 31,
+    "username": "troll1",
+    "password": "$2b$10$Y/HOEMNU2gI8WqWfiWAnjOtlgjU3o84v1fUdV/jqSZCcpIKnCpuU2"
+  },
+  {
+    "id": 32,
+    "username": "troll1",
+    "password": "$2b$10$HRRt6lVwXObTLXOnbPuSF.i.J5CaK2XgFECSGLneOE/u6bA85/cIC"
+  },
+  {
+    "id": 33,
+    "username": "troll1",
+    "password": "$2b$10$R4fCME/s1UtSndwkuNYZV.lNVN4Ha7xVlqXh.k7bYbcD2ksxF5UQS"
+  },
+  {
+    "id": 34,
+    "username": "troll1",
+    "password": "$2b$10$Pxc2kOa6qUT3NkFwoy13NuHFp5sRqR6rU/ASkF6bMWbx4lS.LJjWq"
+  },
+  {
+    "id": 35,
+    "username": "troll1",
+    "password": "$2b$10$TAqVbscDyEuDwaA5KcgtXOZ5/Ft3MPN1B81Os6n4LllPuSqb3M2a2"
+  }
+]
+Response file saved.
+> 2022-05-13T103943.200.json
+
+Response code: 200 (OK); Time: 266ms; Content length: 3067 bytes

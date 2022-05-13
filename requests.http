@@ -1,0 +1,27 @@
+### 1- POST https://trollauthapp.herokuapp.com/users/new - create new user endpoint, not secured
+POST https://trollauthapp.herokuapp.com/users/new
+Content-Type: application/json
+
+{
+  "email": "troll1@gmail.com",
+  "password": "Red12345",
+  "username": "troll1",
+  "role": 1
+}
+
+### 2- POST https://trollauthapp.herokuapp.com/auth/login - login enpoint, returns auth token
+POST https://trollauthapp.herokuapp.com/auth/login
+Content-Type: application/json
+
+{
+  "password": "Red12345",
+  "username": "troll1"
+}
+
+
+### 3- GET https://trollauthapp.herokuapp.com/users - list of all registered users, secured by jwt
+### token take from request #2
+GET https://trollauthapp.herokuapp.com/users
+Authorization: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRyb2xsMSIsInN1YiI6OCwiaWF0IjoxNjUyNDI3OTczLCJleHAiOjE2NTI0MjgyNzN9.fOJrZFhhvYurcRzNdPExE9jkBNM1AiykCIakAP9OXkI
+
+

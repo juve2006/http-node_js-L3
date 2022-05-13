@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const zlib = require('zlib');
+const {request, response} = require("express");
 
 
 const port = 8080;
@@ -30,6 +32,14 @@ app.get('/', function (request, response,next) {
         next(err);
     });
 });
+
+app.get ('/zip', (request, response, next) => {
+    let file = fs.readFileSync('out.txt'); // sync is for readability
+    let gzip = zlib.gzipSync(file); // is instance of Uint8Array
+    response.write(gzip);
+    response.send
+});
+
 app.listen(8080, ()=>{
     console.log ('Server start on port '+`${port}`);
 });
