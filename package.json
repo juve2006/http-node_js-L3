@@ -1,26 +1,11 @@
 {
-  "name": "http-node_js-l3",
+  "name": "course-fs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.20.0",
+    "chai": "^4.3.6",
     "express": "^4.18.1",
-    "fs": "0.0.1-security"
-  },
-  "devDependencies": {
-    "body-parser": "^1.20.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/juve2006/http-node_js-L3.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/juve2006/http-node_js-L3/issues"
-  },
-  "homepage": "https://github.com/juve2006/http-node_js-L3#readme"
+    "nodemailer": "^6.7.5",
+    "sinon": "^13.0.2"
+  }
 }
