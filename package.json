@@ -1,6 +1,7 @@
 {
   "name": "course-fs",
   "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "body-parser": "^1.20.0",
     "chai": "^4.3.6",

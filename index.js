@@ -1,10 +1,7 @@
 import express from "express";
 import fs from "fs";
 import { createGzip, createGunzip } from "zlib";
-import sendMail from './sendMailer.mjs';
-
-
-
+import { sendM } from './sendMailer.js';
 
 const port = 8080;
 
@@ -12,7 +9,6 @@ const app = express();
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-
 
 app.post('/', function (request, response) {
     if (!request.body) return response.sendStatus(400);
@@ -40,8 +36,8 @@ app.get ('/zip', (request, response, next) => {
     const readableStream = fs.createReadStream('out.txt');
     const writableStream = fs.createWriteStream('out.txt.zip');
     const gzip = createGzip();
-    readableStream.pipe(gzip).pipe(writableStream)
-    sendMail('yourEmail@gmail.com', 'you', 'out.txt.zip');
+    readableStream.pipe(gzip).pipe(writableStream);
+    sendM();
     response.send ('Data zipped, Email has been sent successfully');
   });
 
